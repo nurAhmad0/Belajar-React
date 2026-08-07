@@ -10,7 +10,8 @@ export default defineConfig({
         index: "index.html",
         hello_world: "hello-world.html",
         TODO: "TodoList.html",
-        table: "table.html"
+        table: "table.html",
+        buttonCoba: "buttonCoba.html"
       }
     }
   }
