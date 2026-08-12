@@ -11,7 +11,8 @@ export default defineConfig({
         hello_world: "hello-world.html",
         TODO: "TodoList.html",
         table: "table.html",
-        buttonCoba: "buttonCoba.html"
+        buttonCoba: "buttonCoba.html",
+        formG: "formG.html"
       }
     }
   }
