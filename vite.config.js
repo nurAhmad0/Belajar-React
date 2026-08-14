@@ -12,7 +12,9 @@ export default defineConfig({
         TODO: "TodoList.html",
         table: "table.html",
         buttonCoba: "buttonCoba.html",
-        formG: "formG.html"
+        formG: "formG.html",
+        contact: "contact.html",
+        task: "task.html"
       }
     }
   }
