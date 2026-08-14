@@ -14,7 +14,8 @@ export default defineConfig({
         buttonCoba: "buttonCoba.html",
         formG: "formG.html",
         contact: "contact.html",
-        task: "task.html"
+        task: "task.html",
+        counter: "counter.html"
       }
     }
   }

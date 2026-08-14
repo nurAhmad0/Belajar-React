@@ -1,48 +1,35 @@
 import { useState } from "react"
+import TaskForm from "./TaskForm"
+import TaskList from "./TaskList"
 
 export default function Task() {
-    const [item, setItem] = useState("");
     const [items, setItems] = useState([])
+    
 
-    const handleCanges = (e) => {
-        setItem(e.target.value);
-    }
+    // jadi yag termasuk dalam share state itu adalah items ini karean
+    // TaskForm itu menembhakh data ke dalam Items dan 
+    // TaskList itu menmpilkan data dari Items
 
-    const handleClick = (e) => {
-        e.preventDefault();
+
+
+
+    //cara satu
+    const handleOnSubmit = (item) => {
         setItems((prevItem) => ([
             ...prevItem,
             item
         ]))
-        setItem("")
     }
+
+
+    
 
 
     return (
         <div>
-            <h1>
-                Create Task
-            </h1>
-
-            <form action="">
-                <input type="text" className="text" value={item} onChange={handleCanges}/>
-                <button onClick={handleClick}>Add</button>
-            </form>
-
-            <h1>
-                List Task
-            </h1>
-            <ul>
-                {/* items.map((parameter1, parameter2, parameter3) => { ... }) jadi kalau untuk 
-                Parameter Pertama (Wajib): Mewakili isi dari elemen array pada iterasi saat ini.
-                Parameter Kedua (Opsional): Mewakili posisi/nomor urut (index) dari elemen tersebut (dimulai dari angka 0).
-                Parameter Ketiga (Sangat Jarang Dipakai): Mewakili array utuh itu sendiri yang sedang di-looping. */}
-                {items.map((item, index) => 
-                    <li key={index}>
-                        {item}
-                    </li>
-                )}
-            </ul>
+            {/* <TaskForm setItems={setItems}/> */}
+            <TaskForm onSubmit={handleOnSubmit}/>
+            <TaskList items={items}/>
         </div>
     )
 }
