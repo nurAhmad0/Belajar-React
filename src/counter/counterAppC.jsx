@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Counter from "./Counter";
 
-export default function CounterApp() {
+export default function CounterAppC() {
     const [show2, setShow2] = useState(true);
 
     const handleChange = (e) => {
@@ -14,8 +14,8 @@ export default function CounterApp() {
 
     return (
         <div>
-            <Counter name={"ahmad"}/>
-            {show2 && <Counter name={"budi"}/>}
+          <h1> posisi sama </h1>
+            {show2 ? <Counter name={"ahmad"}/> : <Counter name={"budi"}/>}
             <input type="checkbox" checked={show2} onChange={handleChange}/> Tampilkan counter 2
             {/* jadi diatas ini itu kalau menghilangkan tampilan component maka statenya akan terhapus dan kalau ditampilkan lagi
             maka nilainay menajdi defalut awal yaitu 0 */}
@@ -42,7 +42,7 @@ export default function CounterApp() {
 // Dinyatakan BEDA:
 // Jika di Posisi 1 sebelumnya adalah <Counter/>, lalu berubah menjadi <Timer/> atau elemen HTML biasa seperti <div />.
 
-// 🟢 Tipe SAMA: React anggap komponen ini SAMA (State dipertahankan)
+// // 🟢 Tipe SAMA: React anggap komponen ini SAMA (State dipertahankan)
 // {isSwapped ? <Counter /> : <Counter />}
 
 // // 🔴 Tipe BEDA: React anggap komponen BEDA (State lama dihancurkan, buat baru)

@@ -1,6 +1,8 @@
 import {createRoot} from "react-dom/client";
 import { StrictMode } from "react";
 import CounterApp from "./counterApp";
+import CounterAppC from "./counterAppC";
+import CounterAppBeda from "./counterAppBeda";
 
 
 
@@ -11,5 +13,7 @@ import CounterApp from "./counterApp";
     .render(
         <StrictMode> 
             <CounterApp/>
+            <CounterAppC/>
+            <CounterAppBeda/>
         </StrictMode>
     )

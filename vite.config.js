@@ -15,7 +15,8 @@ export default defineConfig({
         formG: "formG.html",
         contact: "contact.html",
         task: "task.html",
-        counter: "counter.html"
+        counter: "counter.html",
+        note: "note.html"
       }
     }
   }
