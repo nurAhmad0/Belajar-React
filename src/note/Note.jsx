@@ -1,3 +1,6 @@
+import { useState } from "react";
+
+
 export default function Note({note, onChange, onDelete}) {
     const [isEditing, setIsEditing] = useState(false);
 

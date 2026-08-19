@@ -5,7 +5,7 @@ export default function NoteList({notes, onChange, onDelete}) {
         <ul>
             {notes.map(note => (
                 <li key={note.id}>
-                    <Note note={Note} onChange={onChange} onDelete={onDelete}/>
+                    <Note note={note} onChange={onChange} onDelete={onDelete}/>
                 </li>
             ))}
         </ul>
