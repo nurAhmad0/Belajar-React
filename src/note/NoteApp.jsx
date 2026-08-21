@@ -9,7 +9,7 @@ const InitialNotes = [
     {id: id++, text: "belajar js", done: false},
     {id: id++, text: "belajar react", done: false}
 ]
-
+//
 
 
 function noteReducer(notes, action){
