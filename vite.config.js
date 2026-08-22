@@ -16,7 +16,9 @@ export default defineConfig({
         contact: "contact.html",
         task: "task.html",
         counter: "counter.html",
-        note: "note.html"
+        note: "note.html",
+        profile: "profile.html",
+        noteCopy: "note_copy.html"
       }
     }
   }
